@@ -1,1 +1,1 @@
-TESTE de Criação de arquivo
+Arquivo de Informações sobre o Projeto
