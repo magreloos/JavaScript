@@ -3,35 +3,35 @@
 var teste01 = function teste01(callback) {
   setTimeout(function () {
     console.log("TESTE-01");
-  }, 3000);
+  }, 1000);
 };
 
 var teste02 = function teste02(callback) {
   setTimeout(function () {
     console.log("TESTE-02");
     callback;
-  }, 6000);
+  }, 600);
 };
 
 function teste03(callback) {
   setTimeout(function () {
     console.log("TESTE-03");
-  }, 5000);
+  }, 500);
 }
 
 var teste04 = function teste04(callback) {
   setTimeout(function () {
     console.log("TESTE-04");
-  }, 1000);
+  }, 1);
 };
 
-var funcaoCallBack = function funcaoCallBack() {
+function funcaoCallBack() {
   console.log("Usuário Salvo!");
-};
+}
 
 teste01();
 console.log(1 + 1);
-teste02(funcaoCallBack);
+teste02(funcaoCallBack());
 teste03();
 console.log(5 + 5);
 teste04();
