@@ -5,4 +5,4 @@ const fatorial = (valor) => {
   return valor * fatorial(valor - 1);
 };
 
-console.log(fatorial(21));
+console.log(fatorial(10));
