@@ -1,0 +1,2 @@
+//reduce é utilizado para reduzir um array em algum tipo de dado, que pode
+//ser uma string, um numero, um objeto literal ou até mesmo outro array. ao contrario do map e filter o reduce pode gerar uma saida que não seja um array
