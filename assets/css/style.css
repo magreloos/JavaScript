@@ -17,6 +17,7 @@ body {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
+  color: #98C379;
 }
 
 .pulse {
