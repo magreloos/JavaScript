@@ -1,0 +1,27 @@
+function aluno(nome, nota) {
+  this.nome = nome;
+  this.noto = nota;
+
+  this.dados_anonimos = function () {
+    setTimeout(function () {
+      //o setTimeout cria uma nova instacia e não busca os dados fora do escopo
+      //para contornar esta questão basta usar array Function
+      console.log(this.nome);
+      console.log(this.noto);
+    }, 2000);
+  };
+
+  this.dados_arrow = function () {
+    setTimeout(() => {
+      /*o setTimeout cria uma nova instacia e não busca os dados fora do escopo
+      para contornar esta questão basta usar arrow Function, ELE NÃO USA O CONTEXTO GERADO PELO SETTIMEOUT
+       ELE USA O CONTEXTO DO PAI - DA FUNÇÃO ALUNO*/
+      console.log(this.nome);
+      console.log(this.noto);
+    }, 1000);
+  };
+}
+const aluno1 = new aluno("paulo", 100);
+aluno1.dados_anonimos();
+console.log("===========");
+aluno1.dados_arrow();
