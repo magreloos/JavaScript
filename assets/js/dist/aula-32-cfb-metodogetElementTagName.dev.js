@@ -19,7 +19,7 @@ var arrayElementos = [dc1, dc2, dc3, dc4, dc5, dc6];
 var colecaoHTML = _toConsumableArray(document.getElementsByTagName("div")); //Forma Reduzida
 
 /*
-para trabalhar uma coleção HTML como array é necessario fazer uma conversão espalhando [Spread](...)
+trabalhar com uma coleção HTML como array é necessario fazer uma conversão espalhando [Spread](...)
 
 */
 
