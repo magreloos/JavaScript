@@ -10,7 +10,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 var caixa1 = document.querySelector("#caixa1");
 var caixa2 = document.querySelector("#caixa2");
-var btn = document.querySelector("#btn_copiar");
+var btn = document.querySelector("#btnTransferir");
 
 var todosCursos = _toConsumableArray(document.querySelectorAll(".curso"));
 
@@ -18,13 +18,28 @@ todosCursos.map(function (el) {
   el.addEventListener("click", function (evt) {
     var curso = evt.target;
     curso.classList.toggle("selecionado");
-  });
-});
-btn.addEventListener("click", function () {
-  var cursosSelecionados = _toConsumableArray(document.querySelectorAll(".selecionado"));
 
-  console.log(cursosSelecionados);
-  cursosSelecionados.map(function (el) {
-    caixa2.appendChild(el);
+    var cursosSelecionados = _toConsumableArray(document.querySelectorAll(".selecionado"));
+
+    var cursosNaoSelecionados = _toConsumableArray(document.querySelectorAll(".curso:not(.selecionado)"));
+
+    cursosSelecionados.map(function (el) {
+      caixa2.appendChild(el);
+    });
+    cursosNaoSelecionados.map(function (el) {
+      caixa1.appendChild(el);
+    });
   });
-});
+}); //COM BOTAO
+// btnTransferir.addEventListener("click", () => {
+//   const cursosSelecionados = [...document.querySelectorAll(".selecionado")];
+//   const cursosNaoSelecionados = [
+//     ...document.querySelectorAll(".curso:not(.selecionado)"),
+//   ];
+//   cursosSelecionados.map((el) => {
+//     caixa2.appendChild(el);
+//   });
+//   cursosNaoSelecionados.map((el) => {
+//     caixa1.appendChild(el);
+//   });
+// });
