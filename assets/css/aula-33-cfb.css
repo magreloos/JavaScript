@@ -1,34 +1,36 @@
+/** @format */
+
 .curso {
-  display: flex;
-  justify-content: center;
-  width: 200px;
-  border: 1px solid #888;
-  border-radius: 10px;
-  padding: 5px;
-  margin: 5px 0px;
-  cursor: pointer;
+	display: flex;
+	justify-content: center;
+	width: 200px;
+	border: 1px solid #888;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 5px 0px;
+	cursor: pointer;
 }
 .curso:hover {
-  border-color: #f00;
-  color: rgb(31, 29, 145);
+	border-color: #f00;
+	color: rgb(31, 29, 145);
 }
 .c1 {
-  background-color: #ccc;
-  color: #444;
+	background-color: #ccc;
+	color: #444;
 }
 
 .c2 {
-  background-color: #444;
-  color: #ccc;
+	background-color: #444;
+	color: #ccc;
 }
 
 .destaque {
-  background-color: #800 !important;
-  color: #fcc !important;
-  border-color: #f00 !important;
+	background-color: #800 !important;
+	color: #fcc !important;
+	border-color: #f00 !important;
 }
 .cursoespecial {
-  background-color: coral;
-  color: blue;
-  border-color: #f00;
+	background-color: coral;
+	color: blue;
+	border-color: #f00;
 }
