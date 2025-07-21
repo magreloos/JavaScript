@@ -64,19 +64,26 @@ button {
 	width: 25px;
 	cursor: pointer;
 }
-
+#btbAdicionarNovoCursoAntes {
+	margin-bottom: 15px;
+}
 .caixaFuncionalidades {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: 5px;
+	padding: 5px;
 }
 .comandos {
 	width: 30%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+}
+
+.caixaNovoCurso button {
+	margin: 10px !important;
 }
 .caixaNovoCurso input {
 	margin: 10px;
@@ -86,7 +93,6 @@ input {
 	margin: 10px;
 	padding: 5px;
 	width: 200px;
-	text-transform: uppercase;
 }
 
 label {
