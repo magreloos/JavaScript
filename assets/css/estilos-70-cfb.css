@@ -1,0 +1,80 @@
+/** @format */
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	box-sizing: border-box;
+	font-size: large;
+}
+.dflex {
+	display: flex;
+}
+.calc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #eee;
+	border: 1px solid #bbb;
+	width: 250px;
+}
+.div_nome {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	margin-bottom: 10px;
+}
+.div_display {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	height: 30px;
+	margin: 2px;
+}
+.display {
+	width: 250px;
+	background-color: rgb(208, 241, 208);
+	text-align: right;
+	border-radius: 3px;
+	border: 1px solid rgb(208, 241, 208);
+	padding: 3px;
+	font-family: monospace;
+	font-size: 20px;
+}
+.div_teclas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	flex-wrap: wrap;
+
+	background-color: rgb(235, 228, 208);
+}
+.teclas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #aaa;
+	border: 2px solid #999;
+	font-weight: bold;
+	cursor: pointer;
+	width: 56px;
+	height: 56px;
+	border-radius: 10px;
+	margin: 2px;
+}
+.teclasOp {
+	background-color: coral;
+	border: 2px solid rgb(255, 102, 0);
+}
+.teclasOp:hover {
+	background-color: rgb(255, 102, 0);
+	border: 2px solid coral;
+}
+
+.num:hover {
+	background-color: rgb(240, 237, 233);
+}
