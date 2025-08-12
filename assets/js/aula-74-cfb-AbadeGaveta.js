@@ -4,9 +4,12 @@ const teclasNum = [...document.querySelectorAll(".num")];
 const teclasOp = [...document.querySelectorAll(".op")];
 const teclaRes = document.querySelector(".res");
 const display = document.querySelector(".display");
-const tonoff = document.querySelector("#tonoff");
-const tLimpar = document.querySelector("#tLimpar");
-const tigual = document.querySelector("#tigual");
+const tcpy = document.getElementById("tcpy");
+const tLimpar = document.getElementById("tLimpar");
+const tigual = document.getElementById("tigual");
+const calcAba = document.getElementById("calcAba");
+const calc = document.getElementById("calc");
+const img_aba_calc = document.getElementById("img_aba_calc");
 
 let sinal = false;
 let decimal = false;
@@ -73,16 +76,20 @@ teclaRes.addEventListener("click", (evt) => {
 	}
 });
 
-tonoff.addEventListener("click", (evt) => {
-	if (display.style.display === "none") {
-		display.style.display = "flex";
-	} else {
-		display.style.display = "none";
-	}
-});
-
 tigual.addEventListener("click", (evt) => {
 	sinal = false;
 	decimal = false;
-	const res=eval(display.innerHTML);
+	const res = eval(display.innerHTML);
+});
+tcpy.addEventListener("click", (evt) => {
+	navigator.clipboard.writeText(display.innerHTML);
+	console.log(display.innerHTML);
+});
+calcAba.addEventListener("click", (evt) => {
+	calc.classList.toggle("calcExibir");
+	if (calc.classList.contains("calcExibir")) {
+		img_aba_calc.setAttribute("src", "assets/img/setaEsquerda.svg");
+	} else {
+		img_aba_calc.setAttribute("src", "assets/img/setaDireita.svg");
+	}
 });

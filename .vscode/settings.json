@@ -2,5 +2,6 @@
   "compile-hero.disable-compile-files-on-did-save-code": false,
   "files.autoSaveDelay": 100,
   "files.autoSave": "afterDelay",
-  "editor.fontSize": 16
+  "editor.fontSize": 16,
+  "liveServer.settings.port": 5501
 }
