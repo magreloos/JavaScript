@@ -1,0 +1,35 @@
+/** @format */
+
+* {
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+input,
+button {
+	margin-bottom: 10px;
+}
+input[type="url"] {
+    margin: 5px;
+	border: 1px solid #000;
+	padding: 10px;
+	border-radius: 5px;
+}
+button {
+    margin: 5px;
+	background-color: #eee;
+	padding: 5px 30px;
+	cursor: pointer;
+	border: 1px;
+}
+h1{
+    margin: 5px;
+}
+

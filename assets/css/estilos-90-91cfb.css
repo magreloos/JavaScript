@@ -1,0 +1,31 @@
+/** @format */
+
+* {
+	border: none;
+	padding: 0px;
+	margin: 3px;
+	box-sizing: border-box;
+}
+.objetos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(100% - 20px);
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #888;
+	background-color: #eee;
+}
+
+.computador {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2px;
+	padding: 5px;
+	border: 1px solid #000;
+	background-color: #eee;
+}
+.computador:hover {
+	background-color: olivedrab;
+}
