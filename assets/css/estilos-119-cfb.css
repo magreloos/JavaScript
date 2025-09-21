@@ -1,0 +1,35 @@
+/** @format */
+
+* {
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+form {
+	display: flex;
+	width: 300px;
+	flex-direction: column;
+}
+input {
+	border: 1px solid #aaa;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+input:hover{
+    background-color: beige;
+}
+
+button:hover{
+    background-color: bisque;
+    color: #000;
+    border: #000 1px solid;
+}
+button {
+	padding: 5px 30px;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #888;
+	color: #fff;
+    border: #000 1px solid;
+}

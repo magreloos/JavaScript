@@ -1,0 +1,26 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Aula 119 Validação Nativa JavaScript</title>
+		<link rel="stylesheet" href="assets/css/estilos-119-cfb.css" />
+		<link rel="icon" href="data:," />
+	</head>
+	<body>
+		<form>
+			<label>Nome</label>
+			<input type="text" id="fNome" minlength="4" maxlength="10" required />
+			<label>Nota</label>
+			<input type="number" id="fNota" min="0" max="10" required />
+			<button id="btnValidar">Validar</button>
+			<p id="fMsg"></p>
+		</form>
+
+		<script
+			src="assets/js/aula-119-cfb-ValidacaoNativaJS.js"
+			type="module"></script>
+	</body>
+</html>
