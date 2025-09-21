@@ -1,0 +1,47 @@
+/** @format */
+
+* {
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.info {
+	display: flex;
+	justify-content: space-around;
+	margin: 5px;
+	padding: 5px;
+}
+.quadrado {
+	display: flex;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	padding: 10px;
+	position: absolute;
+}
+#q1 {
+	background-color: #f00;
+	top: 20px;
+	left: 100px;
+}
+#q1:hover {
+	background-color: #f00;
+	top: 20px;
+	left: 100px;
+	border-radius: 25px;
+}
+
+#q2 {
+	background-color: #00f;
+	top: 150px;
+	left: 300px;
+	border-radius: 50px;
+}
+#q2:hover {
+	background-color: #00f;
+	top: 150px;
+	left: 300px;
+	border-radius: 5px;
+}
